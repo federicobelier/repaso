@@ -50,9 +50,32 @@
 
 
 			elProducto.Descuento("Descuentooo")
-			elProducto.Mostrar()
 
+			let listado = [elProducto]
+
+			fetch("https://api.npoint.io/6b51ed82842567c3a283").then(function(rta){
+				return rta.json()
+
+			}).then(function(productos){
+
+				productos.forEach(function({Nombre,Stock,Precio,Imagen,Marca}){
+					let superProducto = new Producto (Nombre,Stock,Precio,Imagen,Marca)
+					superProducto.Mostrar()
+				})
+
+			})
+
+
+
+		/*	listado.forEach(function(producto){
+				producto.Mostrar()
+			})
+			*/
 			
 		 </script>
 	</body>
  </html>
+
+
+
+
