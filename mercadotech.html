@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+ <html lang="es-AR">
+ 	<head>
+ 		<meta charset="utf-8">
+ 		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+ 		<title>MercadoTECH - Tu e-shop.js</title>
+		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		</head>
+
+ 	<body>
+ 		<header class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
+ 			<div class="container">
+ 				<a class="navbar-brand font-weight-bold" href="#">&#x1F5A5; MercadoTECH</a>
+ 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menu">
+ 					<span class="navbar-toggler-icon"></span>
+ 				</button>
+ 				<nav class="collapse navbar-collapse" id="menu">
+ 					<ul class="navbar-nav ml-auto">
+ 						<li class="nav-item">
+ 							<a id="login" class="nav-link" href="#">&#x1F512; Ingresar</a>
+ 						</li>
+ 						<li class="nav-item d-none">
+ 							<a id="logout" class="nav-link" href="#">Bienvenid@ <span>{{USUARIO}}</span> [x]</a>
+ 						</li>
+ 					</ul>
+ 				</nav>
+ 			</div>
+ 		</header>
+ 		<main class="container m-0">
+ 			<h2 class="w-100 my-5 p-3">&#x2B50; Productos Destacados</h2>
+ 			<!-- AREA PRODUCTOS DESTACADOS -->
+ 			<section id="productos-destacados" class="row py-3">
+ 				
+
+ 			</section>
+ 		</main>
+ 		<footer class="py-5 bg-dark">
+ 			<div class="container">
+ 				<p class="m-0 text-center text-white">¡La mejor manera de comprar online!</p>
+ 			</div>
+		 </footer>
+		 
+
+		 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		 <script src="producto.class.js"></script>
+		 <script>
+			let elProducto = new Producto("Iphone 12", 500, 999.99,"http://lorempixel.com/480/320/technics/","Apple")
+
+
+			elProducto.Descuento("Descuentooo")
+			elProducto.Mostrar()
+
+			
+		 </script>
+	</body>
+ </html>
