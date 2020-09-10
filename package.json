@@ -1,0 +1,22 @@
+{
+  "name": "mercadotech",
+  "version": "0.0.1",
+  "description": "Plataforma de productos JS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/federicobelier/repaso.git"
+  },
+  "author": "federicobelier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/federicobelier/repaso/issues"
+  },
+  "homepage": "https://github.com/federicobelier/repaso#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
